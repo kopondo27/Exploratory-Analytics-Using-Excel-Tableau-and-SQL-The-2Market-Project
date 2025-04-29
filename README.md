@@ -44,6 +44,14 @@ which was above what the rest of customers were earning. Deleted this entry.
 average age. Grouped income into bands of 50,000 and calculated average age in each category. See sheet for record of this.
 Used sort function to find income for the lowest and highest ages.
  ### SQL
+ ```sql
+CREATE TABLE marketing_data_CLEAN (
+	ID BIGSERIAL PRIMARY KEY,
+	Age INTEGER,
+	Education VARCHAR(20),
+	Marital_Status VARCHAR(30),
+```
+
  Moved to SQL and used the data I had cleaned in Excel. Excel allows analysis and easy combination of data from different sources. I saved the Excel file as a CSV file so that it is compatible with SQL. I created a new database and called it 2Market 
 Assignment in pgAdmin, I then opened the query tool and used the create table syntax to create the table and the columns (please see the queries in the appendix section). I 
 then did the same for the Ad-data. I imported the respective files and run queries to find out: 
