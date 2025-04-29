@@ -1,11 +1,23 @@
 # Exploratory-Analytics-Using-Excel-Tableau-and-SQL-The-2Market-Project
 ## Table of Contents
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
+- [Tools Used](#tools-used)
+- [Data Preparation and Cleaning](#data-preparation-and-cleaning)
+- [Analysis](#analysis)
+- [Visualisation](#visualisation)
+- [Insights and Recommendations](#insights-and-recommendations)
+- [Limitations](#limitations)
+- [References](#references)
 ## Project Overview
 This project focusses on the analysis of 2Market, a fictional global supermarket  sells products online and in-store, to help them understand their customer purchase behaviour. 
 In particular, 2Market wants to understand:
 - The demographics of their customers 
 - Which advertising channels seem to be the most effective
 - Which products seem to sell the best and if that varies based on demographic
+![Tableau 2Market screenshot](https://github.com/user-attachments/assets/cf43f54d-3655-4de9-94cf-7839b8237949)
+
+
 
 ## Data Source
 The following files have been provided:
@@ -17,7 +29,7 @@ The following files have been provided:
 - SQL for analysis.
 - Tableau for visualisation.
 
-## Data preparation and Cleaning
+## Data Preparation and Cleaning
 The first step was to upload the data onto excel and start the cleaning process. The top row was frozen using freeze panes navigation and it was also made bold. The was to help the column headers be more visible and stay static while scrolling up and down the sheet.Then the data was checked for blanks by navigating to “find and select”, “go to special”, then “blanks”. Blanks in data can make using different functions in excel impossible. This data did not have any blanks. I then checked for duplicates; having multiple records of the same entry can skew analysis results, leading to incorrect insights about the data. There were a few duplicates in the data that were detected and deleted.
 There was a column with the years the customers were born. Having the year of birth would not be helpful as we needed the age of the customers instead. To obtain this, I created a blank column and called it age then subtracted the year of birth from the present year (2024), copied the formula down the sheet. Use copy special to copy the ages into the year of birth column and omitted the formula to make analysis and calculations easier later. Filtered ages from smallest to largest and vice versa to look for any outliers. Since outliers are values that fall out of the expected ranges, they can 
 impede the accuracy of analysis. There were 3 entries of 123, 124, 130. It is highly unlikely that the customers of 2Market are this old, so I deleted these values. I hid all 
@@ -55,7 +67,7 @@ not increase according to age and was randomly distributed.
 Leveraged tableau to create a dashboard and visualise different elements like sales of all categories of products, them sales across all countries, average age in different countries, average 
 income in different marital statuses and products bought by people of different maritalstatuses. See attached tbwx document in the files section for the visualisations.
 
-## Insights and Recommendations.
+## Insights and Recommendations
 1. There is room to increase sales of vegetables as is the lowest selling product across all age groups. Targeted marketing adverts can be used as well as exploration of other avenues of making vegetables visible and attractive to customers.
 2 Ages between 34 and 68 seem to the most responsive to social media ads. Ads can be increased to target these age groups. Personalised adverts that appeal to other younger and older age groups could help increase reach.
 3. Social media adverts have overall better response than the brochure ads. More can be done to get maximum benefit out of these online platforms.
